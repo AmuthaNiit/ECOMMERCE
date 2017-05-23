@@ -54,33 +54,9 @@ width:100px;
 </style>
 </head>
 <body>
-<header> 
-<div class="container">
-  <div class="jumbotron">
-    <h1>Women's Shopping Corner</h1>
-<img id = "logo" src="D:\DEVOPS\Logo.jpg"  alt="Cinque Terre">
-
-
-</div>
-
+<header>
+<jsp:include page="header.jsp"/>
 </header>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Women's Shoping</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Aboutus</a></li>
-      <li><a href="#">Contact Us</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-    </ul>
-  </div>
-</nav>
 
 <div class="container">
    
@@ -95,7 +71,7 @@ width:100px;
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="D:\DEVOPS\images\change5.jpg" alt="Wedding sarees" style="height: 25%  width:25%;">
+        <img src="change5.jpg" alt="Wedding sarees" style="height: 25%  width:25%;">
       </div>
 
       <div class="item">
@@ -122,7 +98,7 @@ width:100px;
 <table style="align :center">
 <tr>
 <td>
-<a href="#"><img id = "click1" src="D:\DEVOPS\images\casual1.jpg" height=200px width=200px> </a>
+<a href="productDetails.jsp"><img id = "click1" src="D:\DEVOPS\images\casual1.jpg" height=200px width=200px> </a>
 </td>
 <td>
 <a href="#"><img id = "click1" src="D:\DEVOPS\images\casual2.jpg" height=200px width=200px></a>
@@ -138,17 +114,9 @@ width:100px;
 
 
 
-
-<footer class="footer">
-        <div class="container text-left">
-            <small style="color:grey" class="copyright">Copyright &copy 2015 SVAPP Private Limited.All Rights Reserved.</small>
-            <a href="#"><small style="color:grey" class="fa fa-lg fa-skype pull-right">  </small></a>
-            <a href="#"><small style="color:grey" class="fa fa-lg fa-google-plus pull-right">  </small></a>
-            <a href="#"><small style="color:grey" class="fa fa-lg fa-linkedin pull-right">  </small></a>
-            <a href="#"><small style="color:grey" class="fa fa-lg fa-twitter pull-right">  </small></a>
-            <a href="#"><small style="color:grey" class="fa fa-lg fa-facebook pull-right">  </small></a>
-        </div><!--End container-->
-    </footer><!--End footer 2-->
+<footer>
+<jsp:include page="footer.jsp"/>
+</footer>
     <div>
     <br></div>
 
